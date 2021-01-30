@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-areas:
+                "link"
+                "main"
+                "footer"
+            ;
+
+
+        }
+
+        .block {
+            background: rgb(226, 223, 219);
+            padding: 5px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .link {
+            background: rgb(240, 237, 233);
+            grid-area: link;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        input {
+            padding: 5px;
+            border: none;
+            background: rgb(226, 223, 219);
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+            color: rgb(177, 63, 63);
+            font-weight: bold;
+
+        }
+
+        footer {
+            background: rgb(240, 237, 233);
+            grid-area: footer;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        footer i {
+            padding: 10px;
+        }
+
+        .blue {
+            color: rgb(173, 177, 233);
+        }
+
+        .w {
+            color: rgb(226, 223, 219);
+        }
+
+        table,
+        th,
+        td {
+            border: 1px dashed black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="link">
+            <div class="block">
+                <input type="text"> .github.io <i class="fas fa-redo-alt"></i>
+            </div>
+
+        </div>
+        <main>
+            <table style="width:100%">
+                <tr>
+                    <th>Name:</th>
+                    <th>Tel no:</th>
+                </tr>
+                <tr>
+                    <td>TA Tle</td>
+                    <td>083-4284942</td>
+                </tr>
+                <tr>
+                    <td>KFC</td>
+                    <td>1150</td>
+                </tr>
+                <tr>
+                    <td>Pizza Hut</td>
+                    <td>55577854</td>
+                </tr>
+                <tr>
+                    <td>Yayoi-ยาโยอิ</td>
+                    <td>1642</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <i class="w fas fa-angle-left"></i>
+            <i class="w fas fa-angle-right"></i>
+            <i class="blue far fa-caret-square-up "></i>
+            <i class="blue fas fa-book-open "></i>
+            <i class="blue fas fa-window-restore "></i>
+        </footer>
+    </div>
+
+</body>
+
+</html>

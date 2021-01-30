@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 105%;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <p>1. ค้นหาข้อมูลว่าแท็ก DOCTYPE  มีหน้าที่อะไร? (5 นาที)  
+        <br> บอกว่ากำลังใช้ HTML 5 อยู่</p>
+
+    <p>2. ถ้าอยากให้มี tooltip ใน tag นั้นต้องใช้ attribute ใด? (3นาที)
+        *tooltip คือข้อความเล็กๆ ที่แสดงเมื่อเลื่อน mouse ไปวางบนบริเวณที่ระบุ 
+        <br> ใช้ visibility </p>
+    <div class="tooltip"> Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+    </div>
+
+    <p>3. แท็ก b, i ต่างจาก strong, em หรือไม่ อย่างไร? (5 นาที) 
+        <br> การแสดงผลไม่แตกต่างกัน </p>
+
+
+    <p>4. หา tag ที่สามารถแสดงข้อความกลับหลังได้
+        เช่น โปรแกรมเมอร์ แสดงเป็น ร์อมเมรกแรปโ 
+        <br> ใช่ Tag bdo </p>
+
+    <p>โปรแกรมเมอร์</p>
+    <p><bdo dir="rtl">โปรแกรมเมอร์</bdo></p>
+
+
+
+
+
+
+
+</body>
+
+</html>

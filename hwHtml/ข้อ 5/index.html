@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        select,
+        input[type=date] {
+            width: 180px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid darkgrey;
+            border-radius: 4px;
+
+        }
+
+        .item8 select,
+        .item8 input[type=date] {
+            width: 80px;
+        }
+
+        input[type=number] {
+            width: 80px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid darkgrey;
+            border-radius: 4px;
+        }
+
+        input[type=submit] {
+            background-color: orange;
+
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            
+        }
+
+
+
+
+
+        .grid-container {
+            width: 500px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            /* background-color: #2196F3; */
+            /* padding: 10px; */
+
+            border: 1px solid black;
+        }
+
+        .grid-container>div {
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .item1 {
+            grid-column: 1 / 3;
+        }
+
+        .item2 {
+            grid-column: 3 / 5;
+        }
+
+        .item3 {
+            grid-column: 1 / 3;
+        }
+
+        .item4 {
+            grid-column: 3 / 5;
+        }
+
+
+
+        .item9 {
+            grid-column: 1 / 5;
+            background-color: rgb(236, 234, 234);
+            height: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+        <div class="item1">
+            <p>Flying from</p>
+            <select id="country" name="country">
+                <option value="au">Karachi, Pakist</option>
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+        <div class="item2">
+            <p>To</p>
+
+            <select id="country" name="country">
+                <option value="au">Islandmabad, pal</option>
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+        <div class="item3">
+            <p>Departing</p>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="item4">
+            <p>Returning</p>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="item5">
+            <p>Adult</p>
+            <input type="number" id="quantity" name="quantity" min="0" max="100" placeholder="1">
+        </div>
+        <div class="item6">
+            <p>Child</p>
+            <input type="number" id="quantity" name="quantity" min="0" max="100" placeholder="0">
+        </div>
+        <div class="item7">
+            <p>Infant</p>
+            <input type="number" id="quantity" name="quantity" min="0" max="100" placeholder="0">
+        </div>
+        <div class="item8">
+            <p>Currency</p>
+            <select id="country" name="country">
+                <option value="au">PKR</option>
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+        <div class="item9">
+            <input type="submit" value="SEARCH">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
