@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        p1 = prompt("Player 1 enter number")
+        while (true) {
+            if (p1 >= 1 && p1 <= 100) {
+                console.log(p1)
+                p2 = prompt("Player 2 enter number")
+                if (p2 > p1)
+                    alert("มากกว่า")
+                else if (p2 < p1)
+                    alert("น้อยกว่า")
+                else if (p2 === p1) {
+                    alert("ถูกต้อง")
+                    break;
+                }
+            }
+            else
+                p1 = prompt("Player 1 enter number")
+        }
+    </script>
+
+</body>
+
+</html>

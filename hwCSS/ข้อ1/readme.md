@@ -8,4 +8,3 @@
 -มีเงา + ขอบมนเหมือนเดิม  
 -รูปต้องต่อสนิทกับ container
 
-https://wat885.github.io/css1/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function sumInput() {
+            let sum = []
+            let s = 0
+            while (true) {
+                data = +(prompt("enter number"))
+                if (data === parseInt(data, 10)) {
+                    console.log("data is integer")
+                    sum.push(data)
+                }
+                else {
+                    console.log("data is not an integer")
+                    for (s of sum) {
+                        s += s
+                    }
+                    console.log(s)
+                    break
+                }
+            }
+        }
+        sumInput()
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 53. Object Part 3 (Exercise)
+
+
+        //1
+        let obj = {};
+        obj.name = "sonter"
+        obj.surname = "pakorn"
+        obj.name = "boy"
+        delete obj.name
+        console.log(obj)
+
+
+        //2
+        function isEmpty(obj) {
+            for (let key in obj) {
+                return false
+            }
+            return true
+        }
+
+        console.log(isEmpty(obj))
+
+        //3  ไม่มี error
+        const user = {
+            name: "John"
+        };
+
+        // does it work?
+        user.name = "Pete";
+        console.log(user)
+
+
+        //4
+        let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+        }
+
+        function sum(obj) {
+            let totalSalaries = 0;
+            for (let key in obj) {
+                totalSalaries += obj[key];
+            }
+            return totalSalaries;
+        }
+
+        console.log(sum(salaries))
+
+        //5
+
+
+        menu = {
+            width: 200,
+            title: "My menu",
+            height: 300,
+        };
+
+        multiplyNumeric(menu, 2);
+        console.log(menu)
+
+        function multiplyNumeric(obj, times) {
+            for (let key in obj) {
+                if (typeof obj[key] !== "number") continue;
+                obj[key] *= times;
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

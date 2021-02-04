@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        bk = 'baBBBBBBkokxxx viagra'
+        test = 'codecamp'
+
+
+        //3
+        function truncate(str, maxlength) {
+            if (str.length > maxlength) {
+                a = str.slice(0, maxlength)
+                a += "..."
+
+            }
+            else
+                a = str
+
+            return a
+        }
+        console.log(truncate(test, 4))
+        console.log(truncate(bk, 4))
+        console.log(truncate(test, 9))
+        console.log(truncate("What I'd like to tell on this topic is:", 20))
+        console.log(truncate("Hi everyone!", 20))
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function getMaxSubSum() {
+
+            let arr = [];
+            let arrIndex = 0;
+            let sum = 0;
+            let val = 0;
+
+            // Loop for input numbers into array
+            while ((val == 0) || (!!(val / 1))) {
+                val = +prompt('Enter number for index(' + arrIndex + '): ');
+                if ((val == 0) || (!!(val / 1))) {
+                    arr.push(val);
+                    arrIndex++;
+                }
+            }
+
+            let maxSum = 0;
+            let maxSumTemp = 0;
+            let startIndex = 0;
+            let endIndex = 0;
+            let startIndexChange = 0;
+
+            // calculate & compare Max of SubArray value
+            for (let i = 0; i < arrIndex; i++) {
+                maxSumTemp += arr[i];
+                if (maxSum < maxSumTemp) {
+                    maxSum = maxSumTemp;
+                    startIndex = startIndexChange;
+                    endIndex = i;
+                }
+                if (maxSumTemp < 0) {
+                    maxSumTemp = 0;
+                    startIndexChange = i + 1;
+                }
+            }
+
+            // Outputs show
+            console.log("Array : ", arr);
+            console.log("Maximum contiguous sum : ", maxSum);
+            console.log("Starting index : " + startIndex);
+            console.log("Ending index : " + endIndex);
+        }
+
+
+    </script>
+</body>
+
+</html>

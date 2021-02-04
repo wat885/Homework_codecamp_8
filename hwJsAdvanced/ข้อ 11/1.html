@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //1
+        let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+
+        function unique(arr) {
+            return arr = new Set(arr)
+        }
+        console.log(unique(values))
+
+
+        //2  Optional     *******************************************
+
+
+        //3
+
+        let map = new Map();
+
+        map.set("name", "John");
+
+        let keys = Array.from(map.keys());
+
+        // Error: keys.push is not a function
+        keys.push("more");
+
+
+    </script>
+</body>
+
+</html>

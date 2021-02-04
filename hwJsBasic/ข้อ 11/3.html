@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+
+    <script>
+
+        function draw(n) {
+            let result = ""
+            for (let i = 0; i < n; i++) {
+                for (let z = 1; z <= n; z++) {
+                    document.querySelector('#p1').innerHTML += z
+                }
+                document.querySelector('#p1').innerHTML += "<br>"
+            }
+        }
+        draw(4)
+    </script>
+
+</body>
+
+</html>

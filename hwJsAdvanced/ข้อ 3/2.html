@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // 4.7 ข้อ 2
+        let key = prompt("enter fruit name")
+        let obj = {};
+
+        while (key !== "stop") {
+            let value = prompt(`enter value ${key}: `)
+            if (value > 1)
+                key = key + "s"
+            obj[key] = value;
+            key = prompt("enter fruit name")
+        }
+
+        console.log(obj);
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+       
+        //5
+        function pressEsc(event){
+            event.keycode === 27;
+        }
+
+        let id = prompt('ใครเป็นคน login')
+        if (id === "Admin") {
+            let pw = prompt('password')
+            if (pw === "codecamp#5") {
+                alert("ยินดีต้อนรับ")
+            }
+            else if (pw === "" || id === null)
+                alert("ยกเลิก")
+            // else if (pw === null)
+            //     alert("ยกเลิก(null)")
+            else
+                alert("Wrong password")
+        }
+        else if (id === "" || pressEsc)
+            alert("ยกเลิก")
+        // else if (id === null)
+        //     alert("ยกเลิกnull")
+        else{
+            alert("ผมไม่รู้จักคุณ")
+        }
+
+
+    </script>
+    
+</body>
+</html>

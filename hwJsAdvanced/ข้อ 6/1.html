@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // 7.4 แบบฝึกหัด ข้อ 1
+
+        function calculator() {
+
+            this.read = function () {
+                this.number1 = +prompt("enter number 1");
+                this.number2 = +prompt("enter number 2");
+            };
+
+            this.sum = function () {
+                return this.number1 + this.number2
+            };
+
+            this.mul = function () {
+                return this.number1 * this.number2
+            };
+
+        }
+
+        let cal = new calculator();
+
+        cal.read()
+        console.log(cal.sum())
+
+
+    </script>
+</body>
+
+</html>
