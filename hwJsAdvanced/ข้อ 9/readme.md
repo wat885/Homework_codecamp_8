@@ -7,7 +7,8 @@
 
 
 
-Exercise Array
+Exercise Array  
+
 1.ผลลัพธ์ของความยาว array คืออะไร  
 
 2.ให้ทำตามขั้นตอนต่อไปนี้
