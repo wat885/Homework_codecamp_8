@@ -1,4 +1,6 @@
-# Homework_codecamp_8
+# Homework_codecamp_8  
+วัชรินทร์ ทัศนาญชลี
+
 
 [ข้อ 1](https://github.com/wat885/Homework_codecamp_8/tree/main/hwJsBasic/%E0%B8%82%E0%B9%89%E0%B8%AD%201)  Lab 1 การตั้งชื่อตัวแปรที่ดี  
 [ข้อ 2](https://github.com/wat885/Homework_codecamp_8/tree/main/hwJsBasic/%E0%B8%82%E0%B9%89%E0%B8%AD%202)  Lab 2 การตั้งชื่อตัวแปรที่ดี  
