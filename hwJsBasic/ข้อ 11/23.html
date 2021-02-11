@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+
+    <script>
+
+        function draw(n) {
+            let str2 = "";
+        for (let i=(n-2); i>=0; i--) {
+            let str1 = "";                        
+            for (let j=0; j<n; j++) {
+                str1 = (i<j)? (str1 + " *") : (str1 + " _");                              
+            }   
+            for (let j=(n-2); j>=0; j--) {
+                str1 = (i<j)? (str1 + " *") : (str1 + " _");                              
+            }               
+            str2 = str2 + (str1 + "<br>");
+        }
+ 
+        for (let i=0; i<n; i++) {
+            let str1 = "";                        
+            for (let j=0; j<n; j++) {
+                str1 = (i<=j)? (str1 + " *") : (str1 + " _");                              
+            }   
+            for (let j=(n-2); j>=0; j--) {
+                str1 = (i<=j)? (str1 + " *") : (str1 + " _");                              
+            }               
+            str2 = str2 + (str1 + "<br>");   
+        }
+        document.getElementById('p1').innerHTML =str2;
+        }
+
+
+        draw(4)
+    </script>
+
+</body>
+
+</html>
