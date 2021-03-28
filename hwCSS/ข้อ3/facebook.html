@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - เข้าสู่ระบบหรือสมัครใช้งาน</title>
+    <style>
+        .container {
+            display: grid;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 80vh 20vh;
+
+            grid-gap: 10px;
+
+        }
+
+        .top-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            background-color: #F0F2F5;
+        }
+
+        img {
+            height: 106px;
+            margin: -28px;
+        }
+
+        h2 {
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 32px;
+            width: 500px;
+        }
+
+        .logo {
+
+            display: grid;
+            /* border: 1px solid blue; */
+        }
+
+        .logo>* {
+            justify-self: end;
+            align-self: center;
+
+        }
+
+        .login {
+
+            display: grid;
+            /* border: 1px solid blue; */
+
+        }
+
+        .login>* {
+            justify-self: start;
+            align-self: center;
+        }
+
+        .box {
+            background-color: #fff;
+            text-align: center;
+            align-items: center;
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            box-sizing: border-box;
+            margin: 40px 0 0;
+            padding: 20px 0 28px;
+            width: 396px;
+        }
+
+        ._8icz {
+            align-items: center;
+            border-bottom: 1px solid #dadde1;
+            display: flex;
+            margin: 20px 16px;
+            text-align: center;
+        }
+
+        input[type=text],
+        input[type="password"] {
+            font-size: 19px;
+            padding: 14px 16px;
+            width: 330px;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+
+        .bLogin {
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            font-size: 22px;
+            line-height: 48px;
+            padding: 0 16px;
+            width: 332px;
+            margin: 15px;
+            color: #fff;
+        }
+
+        .bRegis {
+            background-color: #42b72a;
+            border: none;
+            border-radius: 6px;
+            font-size: 19px;
+            line-height: 48px;
+            padding: 0 16px;
+            width: 155px;
+            margin: 15px;
+            color: #fff;
+        }
+
+        .pageButton {
+            text-decoration: none;
+            font-weight: 900;
+            color: #1c1e21;
+        }
+
+        .pageButton:hover {
+            text-decoration: underline;
+        }
+
+        .menuLogin {
+            text-align: center;
+        }
+
+
+
+
+
+        .footer {
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .language>*,
+        .other>* {
+            text-decoration: none;
+            display: inline-block;
+            opacity: 0.8;
+            color: #8a8d91;
+            padding-right: 5px;
+        }
+
+        .language>*:hover,
+        .other>*:hover {
+            text-decoration: underline;
+        }
+
+        span {
+            opacity: 0.8;
+            color: #8a8d91;
+            padding-right: 5px;
+        }
+
+
+        @media (max-width: 1100px) {
+            .top-container {
+                width: 100%;
+                grid-template-columns: 1fr;
+                justify-self: center;
+
+            }
+
+            .logo {
+                justify-self: center;
+                text-align: center;
+                padding-top: 50px;
+            }
+
+
+
+
+
+
+
+            .login {
+                justify-self: center;
+            }
+            .box{
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top-container">
+            <div class="logo">
+                <div>
+                    <img src="dF5SId3UHWd.svg" alt="">
+                    <h2>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</h2>
+                </div>
+            </div>
+
+            <div class="login">
+                <div>
+                    <div class="box">
+                        <div><input type="text" id="user" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ"></div>
+                        <div><input type="password" id="password" placeholder="รหัสผ่าน"></div>
+                        <input type="submit" value="เข้าสู่ระบบ" class="bLogin">
+                        <div><a href="" style="text-decoration: none; color:#1877f2">ลืมรหัสผ่านใช่หรือไม่</a></div>
+                        <div class="_8icz"></div>
+                        <input type="submit" value="สร้างบัญชีใหม่" class="bRegis">
+
+                    </div>
+                    <div class="menuLogin">
+                        <p>
+                            <a href="#" class="pageButton">สร้างเพจ</a>
+                            สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="fcon">
+                <div class="language">
+
+                    <a href="" style="color:#1c1e21">ภาษาไทย</a>
+                    <a href="">English (UK)</a>
+                    <a href="">日本語</a>
+                    <a href="">中文(简体)</a>
+                    <a href="">Tiếng Việt</a>
+                    <a href="">Français (France)</a>
+                    <a href="">Deutsch</a>
+                    <a href="">Русский</a>
+                    <a href="">Español</a>
+                    <a href="">Português (Brasil)</a>
+                    <a href="">Italiano</a>
+                </div>
+                <hr>
+                <div class="other">
+                    <a href="">Sign Up</a>
+                    <a href="">Log In</a>
+                    <a href="">Messenger</a>
+                    <a href="">Facebook Lite</a>
+                    <a href="">Watch</a>
+                    <a href="">People</a>
+                    <a href="">Pages</a>
+                    <a href="">Page categories</a>
+                    <a href="">Places</a>
+                    <a href="">Games</a>
+                    <a href="">Locations</a>
+                    <a href="">Marketplace</a>
+                    <a href="">Facebook Pay</a>
+                    <a href="">Groups</a>
+                    <a href="">Jobs</a>
+                    <a href="">Oculus</a>
+                    <a href="">Portal</a>
+                    <a href="">Instagram</a>
+                    <a href="">Local</a>
+                    <a href="">Fundraisers</a>
+                    <a href="">Services</a>
+                    <a href="">Voting Information Centre</a>
+                    <a href="">เกี่ยวกับ</a>
+                    <a href="">สร้างโฆษณา</a>
+                    <a href="">สร้างเพจ</a>
+                    <a href="">ผู้พัฒนา</a>
+                    <a href="">ร่วมงานกับ Facebook</a>
+                    <a href="">ความเป็นส่วนตัว</a>
+                    <a href="">คุกกี้</a>
+                    <a href="">ตัวเลือกโฆษณา</a>
+                    <a href="">เงื่อนไข</a>
+                    <a href="">ความช่วยเหลือ</a>
+                </div>
+                <div style="margin-top: 20px;">
+                    <span> Facebook © 2021</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
